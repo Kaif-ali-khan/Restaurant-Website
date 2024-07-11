@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restaurants-App</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="section2.css" />
+    <link rel="stylesheet" href="section3.css">
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -20,11 +23,13 @@
         </div>
         <div class="navmid">
           <nav>
-            <li><a href="">Menu</a></li>
-            <li><a href="">Events</a></li>
-            <li><a href="">Gallery</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
+            <ul>
+              <li><a href="">Menu</a></li>
+              <li><a href="">Events</a></li>
+              <li><a href="">Gallery</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
           </nav>
         </div>
         <div class="navright">
@@ -37,6 +42,11 @@
       <!-- section1 hero banner code starts is here -->
       <div class="section1">
         <div class="left">
+          <div class="circle">
+            <div class="text">
+              <p>FoodsDelicious</p>
+            </div>
+          </div>
           <h1>We provide the best food for you</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, et
@@ -56,8 +66,6 @@
           </div>
         </div>
 
-
-
         <div class="right">
           <div class="section1-images">
             <img
@@ -74,23 +82,95 @@
 
       <div class="section2">
         <div class="sec2-top">
-            <h1>Our Special Dishes</h1>
+          <h2>Our Special Dishes</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, et
-            commodi eum quod dolores saepe quia, dolor rem sit dolore unde
-            possimus vero.
+            commodi eum quod dolores saepe quia, possimus vero.
           </p>
         </div>
         <div class="sec2-bottom">
-            <div class="food-info-boxes">
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
+          <div class="food-info-boxes">
+            <div class="box">
+              <div class="box-top">
+                <img src="img/section2-boxes/dish-1 1.png" alt="" />
+                <img src="img/section2-boxes/Price.png" alt="" class="price-tag">
+              </div>
+              <div class="box-bottom">
+                <h3>Lumpia with Suace</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Itaque, et.
+                </p>
+              </div>
             </div>
+            <div class="box">
+                <div class="box-top">
+                    <img src="img/section2-boxes/dish-3 1.png" alt="" />
+                    <img src="img/section2-boxes/Price.png" alt="" class="price-tag">
+                  </div>
+                  <div class="box-bottom">
+                    <h3>Fish and Veggie</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Itaque, et.
+                    </p>
+                  </div>
+            </div>
+            <div class="box">
+                <div class="box-top">
+                    <img src="img/section2-boxes/dish-4.png" alt="" />
+                    <img src="img/section2-boxes/Price.png" alt="" class="price-tag">
+                  </div>
+                  <div class="box-bottom">
+                    <h3>Tofu Chili</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Itaque, et.
+                    </p>
+                  </div>
+            </div>
+            <div class="box">
+                <div class="box-top">
+                    <img src="img/section2-boxes/dish-5.png" alt="" />
+                    <img src="img/section2-boxes/Price.png" alt="" class="price-tag">
+                  </div>
+                  <div class="box-bottom">
+                    <h3>Egg and Cocumber</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Itaque, et.
+                    </p>
+                  </div>
+            </div>
+          </div>
         </div>
       </div>
       <!-- ends here -->
+
+      <!-- section3 code start here -->
+      <div class="section3">
+        <div class="left">
+          <h1>Wecome to Our Restaurant</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, et
+            commodi eum quod dolores saepe quia, dolor rem sit.
+          </p>
+
+          <div class="btn-twin">
+            <button class="btn-menu">Menu</button>
+            <button class="btn">Book a Table</button>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="section3-images">
+            <img src="img/section-1/dish-2 1.png" alt=""/>
+          </div>
+        </div>
+      </div>
+       <!-- ends here -->
     </div>
+
+    <script src="app.js"></script>
   </body>
 </html>
