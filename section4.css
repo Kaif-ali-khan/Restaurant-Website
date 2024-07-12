@@ -1,20 +1,21 @@
-.section3 {
+.section4 {
+    margin-top: 150px;
     width: 100%;
     height: 100vh;
     display: flex;
-    flex-direction: row-reverse;
-    background-color: #f3f4f4;
+    justify-content: center;
+    align-items: center;
 }
 
 /* left side code starts here */
-.section3 .left {
+.section4 .left {
     width: 50%;
     height: 100%;
     /* background-color: red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0px 130px;
+    padding: 0px 120px;
 }
 
 
@@ -24,13 +25,40 @@
     padding-right: 100px;
 }
 
-.section3 .left p {
+.section4 .left p {
     font-size: 1.3vw;
     padding-bottom: 50px;
     line-height: 1.5;
     padding-right: 100px;
 }
-
+.check-paragraph-row{
+    width: 750px;
+    height: 500px;
+    /* background-color: red; */
+    display: flex;
+}
+.check-para-column{
+    flex: 50%;
+}
+.check-para-in{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 15px;
+    flex: 50%;
+}
+.check-para-in i{
+    background-color: #ea6d27;
+    padding: 5px 6px;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 19px;
+}
+.check-para-in p{
+    font-size: 1.3vw;
+    font-weight: 500;
+}
 .left .btn-twin {
     display: flex;
     align-items: center;
@@ -51,7 +79,7 @@
 
 
 
-.section3 .right {
+.section4 .right {
     width: 50%;
     height: 100%;
     /* background-color: blue; */
@@ -60,16 +88,16 @@
 
 
 
-.section3-images {
+.section4-images {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.section3-images img {
-    width: 700px;
-    height: 700px;
-    object-fit: cover;
+.section4-images img {
+    width: 500px;
+    /* height: 600px; */
+    /* object-fit: cover; */
 }
 
 /* ends here */

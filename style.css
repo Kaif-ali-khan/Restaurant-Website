@@ -36,7 +36,8 @@ nav li a {
     text-decoration: none;
     color: #000;
 }
-nav li a:hover{
+
+nav li a:hover {
     color: #EA6D27;
 }
 
@@ -54,9 +55,10 @@ nav li a:hover{
     cursor: pointer;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.btn:hover{
+
+.btn:hover {
     background-color: #000;
-    
+
 }
 
 /* 
@@ -133,7 +135,8 @@ section1 hero banner code is here */
     cursor: pointer;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.btn-menu:hover{
+
+.btn-menu:hover {
     background-color: #EA6D27;
 }
 
@@ -150,7 +153,8 @@ section1 hero banner code is here */
     padding: 10px;
     border-radius: 50px;
 }
-.social-icons i:hover{
+
+.social-icons i:hover {
     background-color: #000;
     color: #fff;
 }
