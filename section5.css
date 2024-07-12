@@ -6,12 +6,12 @@
 
 .sec5-top {
     width: 100%;
-    height: 35%;
+    height: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 100px 300px;
+    padding: 200px 300px;
 }
 
 .sec5-top h2 {
@@ -23,6 +23,7 @@
     font-size: 1.3vw;
     padding: 0px 160px;
     line-height: 1.5;
+    text-align: center;
 }
 
 .sec5-bottom {
@@ -33,7 +34,7 @@
     justify-content: center;
 }
 
-.food-info-boxes {
+.slider-boxes {
     width: 80%;
     height: 90%;
     display: flex;
@@ -44,68 +45,65 @@
 }
 
 
-.box {
+.s-box {
     position: relative;
-    width: 300px;
-    height: 300px;
-    border-radius: 50px 10px;
+    width: 600px;
+    height: 430px;
+    border-radius: 50px 50px;
+    background-color: #fff;
 }
 
-.box:hover {
+/* .s-box:hover {
     background-color: #fff;
     transform: scale(1.05);
     transition: transform 1s;
-}
+} */
 
-.box-top {
+.s-box-top {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.box-top img {
+.s-box-top img {
     position: absolute;
-    top: -100px;
-    left: 35px;
-    width: 220px;
+    top: -60px;
+    left: 250px;
+    width: 100px;
     object-fit: cover;
     padding-bottom: 30px;
 }
 
-.box-top .price-tag {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 200px;
-    top: -80px;
-    background-color: #000;
-    border-radius: 50%
+.s-box-top span {
+    padding-top: 60px;
 }
 
-.price-tag p {
-    font-size: 18px;
-    color: #fff;
-    position: relative;
-    top: 15px;
-    left: 12px;
+.checked {
+    color: orange;
+    padding-right: 10px;
 }
 
-.box-bottom {
+
+.s-box-bottom {
     position: absolute;
     top: 130px;
 }
 
-.box-bottom h3 {
+.s-box-bottom h3 {
     font-size: 25px;
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     font-weight: 700;
 }
 
-.box-bottom p {
+.s-box-bottom p {
     text-align: center;
-    font-size: 1.1vw;
-    padding: 0px 30px;
+    font-size: 1.4vw;
     font-weight: 500;
     line-height: 1.5;
+    padding: 0px 90px 40px 90px;
+}
+.s-box-bottom h4{
+    text-align: center;
+    font-weight: 300;
 }
