@@ -107,8 +107,8 @@ section1 hero banner code is here */
 }
 
 .left h1 {
-    font-size: 3.5vw;
-    padding-bottom: 10px;
+    font-size: 3vw;
+    padding-bottom: 30px !important;
     padding-right: 100px;
 }
 

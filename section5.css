@@ -11,11 +11,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 200px 300px;
+    padding: 120px 300px;
 }
 
 .sec5-top h2 {
-    font-size: 3.5vw;
+    font-size: 3vw;
     padding-bottom: 20px;
 }
 
@@ -48,7 +48,7 @@
 .s-box {
     position: relative;
     width: 600px;
-    height: 430px;
+    height: 420px;
     border-radius: 50px 50px;
     background-color: #fff;
 }
