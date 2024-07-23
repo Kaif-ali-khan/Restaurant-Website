@@ -1,109 +1,66 @@
-.section5 {
+.testomonial-container{
     width: 100%;
-    height: 100%;
-    background-color: #f3f4f4;
+    /* height: 100vh; */
+    background-color: red;
+
 }
 
-.sec5-top {
-    width: 100%;
-    height: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 120px 300px;
+.testo-top{
+  padding: 10px 300px;
 }
 
-.sec5-top h2 {
-    font-size: 3vw;
-    padding-bottom: 20px;
+.testo-top h2 {
+  font-size: 3vw;
+  text-align: center;
 }
 
-.sec5-top p {
-    font-size: 1.3vw;
-    padding: 0px 160px;
-    line-height: 1.5;
-    text-align: center;
+.testo-top p {
+  font-size: 1.3vw;
+  line-height: 1.5;
+  text-align: center;
+  padding: 0px 200px;
 }
+    
 
-.sec5-bottom {
-    width: 100%;
-    height: 65%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    
 
-.slider-boxes {
-    width: 80%;
-    height: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    padding: 50px 0;
-}
+      /* boxes css starts here */
 
+      .slide{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .testomonial-box{
+        background-color: #fff;
+        width: 40%;
+        /* height: 400px; */
+      }
+      .checked {
+        color: orange;
+      }
 
-.s-box {
-    position: relative;
-    width: 600px;
-    height: 420px;
-    border-radius: 50px 50px;
-    background-color: #fff;
-}
+      .testomonial-box img{
+        width: 110px;
+        /* position: absolute;
+        top: 5px; */
+        margin: 0 auto;
+        padding: 10px 0px;
+        margin-top: 40px;
+      }
 
-/* .s-box:hover {
-    background-color: #fff;
-    transform: scale(1.05);
-    transition: transform 1s;
-} */
+      .testomonial-box{
+        padding: 120px;
+      }
 
-.s-box-top {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.s-box-top img {
-    position: absolute;
-    top: -60px;
-    left: 250px;
-    width: 100px;
-    object-fit: cover;
-    padding-bottom: 30px;
-}
-
-.s-box-top span {
-    padding-top: 60px;
-}
-
-.checked {
-    color: orange;
-    padding-right: 10px;
-}
-
-
-.s-box-bottom {
-    position: absolute;
-    top: 130px;
-}
-
-.s-box-bottom h3 {
-    font-size: 25px;
-    text-align: center;
-    padding-bottom: 10px;
-    font-weight: 700;
-}
-
-.s-box-bottom p {
-    text-align: center;
-    font-size: 1.4vw;
-    font-weight: 500;
-    line-height: 1.5;
-    padding: 0px 90px 40px 90px;
-}
-.s-box-bottom h4{
-    text-align: center;
-    font-weight: 300;
-}
+      .testomonial-box p{
+        font-size: 1.5vw;
+      }
+      .testomonial-box h3{
+        font-size: 1.5vw;
+        font-weight: 700;
+      }
+      .testomonial-box h4{
+        font-size: 1vw;
+      }
+      /* end here */

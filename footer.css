@@ -49,6 +49,7 @@ footer #col-1 {
     font-size: 1.5vw;
     padding-bottom: 30px;
     line-height: 1.5;
+    color: #8c929d;
 }
 
 
@@ -84,13 +85,13 @@ footer #col-1 {
     text-transform: uppercase;
     padding-bottom: 40px;
 }
-.foot-col h3{
-    font-size: 1.5vw;
+.foot-col-bottom-col h3{
+    font-size: 1.2vw;
     color: #8c929d;
     padding-bottom: 10px;
 }
-.foot-col p{
-    font-size: 1.5vw;
+.foot-col-bottom-col p{
+    font-size: 1vw;
     color: #8c929d;
 }
 .foot-col li {
