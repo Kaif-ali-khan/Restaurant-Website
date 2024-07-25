@@ -33,7 +33,7 @@ function loadSections() {
       })
       .catch((error) => console.error("Error loading section:", error));
   });
- return Promise.all(promisesArr);
+  return Promise.all(promisesArr);
 }
 
 // Load HTML files into containers
@@ -43,17 +43,20 @@ Promise.all([
   loadHTML("footer-container", "footer.html"),
 ]).then(() => {
   // Load sections into the main content area after main.html has been loaded
-  loadSections().then(()=>{
+  loadSections().then(() => {
     const text = document.querySelector(".text p");
     // console.log(text2);
     text.innerHTML = text.innerText
-  .split("")
-  .map(
-    (char, i) => `<span style="transform:rotate(${i * 25}deg)">${char}</span>`
-  )
-  .join("");
+      .split("")
+      .map(
+        (char, i) =>
+          `<span style="transform:rotate(${i * 25}deg)">${char}</span>`
+      )
+      .join("");
   });
-  
 });
 
-console.log("hello");
+
+
+
+

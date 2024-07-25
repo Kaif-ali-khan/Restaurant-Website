@@ -47,3 +47,13 @@ nav li a:hover {
 
 }
 
+.check-btn{
+    color: #000;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+

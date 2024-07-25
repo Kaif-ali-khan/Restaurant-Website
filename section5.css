@@ -1,12 +1,13 @@
-.testomonial-container{
-    width: 100%;
-    /* height: 100vh; */
-    background-color: red;
+.testomonial-container {
+  width: 100%;
+  /* height: 100vh; */
+  background-color: red;
+  position: relative;
 
 }
 
-.testo-top{
-  padding: 10px 300px;
+.testo-top {
+  padding: 50px 300px;
 }
 
 .testo-top h2 {
@@ -20,47 +21,65 @@
   text-align: center;
   padding: 0px 200px;
 }
-    
 
-    
 
-      /* boxes css starts here */
 
-      .slide{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-      }
-      .testomonial-box{
-        background-color: #fff;
-        width: 40%;
-        /* height: 400px; */
-      }
-      .checked {
-        color: orange;
-      }
 
-      .testomonial-box img{
-        width: 110px;
-        /* position: absolute;
-        top: 5px; */
-        margin: 0 auto;
-        padding: 10px 0px;
-        margin-top: 40px;
-      }
+/* boxes css starts here */
 
-      .testomonial-box{
-        padding: 120px;
-      }
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  background-color: yellow;
+  height: 50%;
+}
 
-      .testomonial-box p{
-        font-size: 1.5vw;
-      }
-      .testomonial-box h3{
-        font-size: 1.5vw;
-        font-weight: 700;
-      }
-      .testomonial-box h4{
-        font-size: 1vw;
-      }
-      /* end here */
+.testomonial-box {
+  background-color: #fff;
+  width: 40%;
+  margin-bottom: 150px;
+  padding: 60px 100px;
+  border-radius: 50px;
+}
+
+.checked {
+  color: orange;
+}
+
+.rating-stars {
+  margin: auto;
+  width: 50%;
+  /* border: 3px solid green; */
+}
+
+.testomonial-box img {
+  width: 110px;
+  position: absolute;
+  top: -80px;
+  transform: translate(140%, 0%);
+}
+
+
+.testomonial-box p {
+  font-size: 1.5vw;
+  text-align: center;
+  padding: 10px 0;
+  line-height: 1.5;
+}
+
+.testomonial-box h3 {
+  font-size: 1.5vw;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.testomonial-box h4 {
+  font-size: 1vw;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* end here */
