@@ -1,7 +1,7 @@
 .section4 {
     margin-top: 150px;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
