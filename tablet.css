@@ -1,10 +1,10 @@
 
-@media screen and (min-device-width: 601px) and (max-device-width: 768px) { 
+@media screen and (min-device-width: 601px) and (max-device-width: 900px) { 
     
 
-    body {
+    /* body {
         background-color: aqua;
-    }
+    } */
 
     #header {
         background-color: red;
