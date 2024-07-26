@@ -11,7 +11,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 100px 300px;
+    padding: 166px 300px
 }
 
 .sec2-top h2 {
@@ -34,7 +34,7 @@
 }
 
 .food-info-boxes {
-    width: 100%;
+    /* width: 100%; */
     height: 90%;
     display: flex;
     justify-content: space-between;
