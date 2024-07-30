@@ -1,6 +1,5 @@
+@media screen and (min-device-width: 601px) and (max-device-width: 900px) {
 
-@media screen and (min-device-width: 601px) and (max-device-width: 900px) { 
-    
 
     /* body {
         background-color: aqua;
@@ -16,11 +15,39 @@
 
     .check-btn {
         display: block;
-        font-size: 58px;
+
+    }
+
+    .check-btn i {
+        font-size: 50px !important;
+    }
+
+    .navmid nav ul {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background-color: red;
+        overflow: hidden;
+        height: 100%;
+        z-index: 10;
+        display: none;
     }
 
     .navmid nav ul li {
-        display: none;
+        padding: 50px;
+        border-bottom: 2px solid #000;
+    }
+
+    .navmid nav ul li a {
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    #menuList {
+        transition: all 0.5s;
     }
 
     .navright .btn {
@@ -385,9 +412,11 @@
     .foot-col li a {
         font-size: 35px !important;
     }
-    .foot-social-icons{
+
+    .foot-social-icons {
         display: flex !important;
     }
+
     .foot-social-icons i {
         font-size: 50px !important;
         padding: 22px !important;

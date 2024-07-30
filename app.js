@@ -56,7 +56,32 @@ Promise.all([
   });
 });
 
+// let menulist = document.getElementById("menuList")
 
+//       menuList.style.maxHeight = "0%";
 
+// function toggleMenu() {
+//   let menuList = document.getElementById("menuList");
+//   if (menuList.style.maxHeight == "0%") {
+//     menuList.style.maxHeight = "100%";
+//   } else {
+//     menuList.style.maxHeight = "0%";
+//   }
+// }
 
+let menulist = document.getElementById("menuList");
 
+menuList.style.maxHeight = "0%";
+menuList.style.display = "none";
+
+function toggleMenu() {
+  if (menuList.style.maxHeight == "0%") {
+    console.log("hey", menuList.style);
+    menuList.style.maxHeight = "100%";
+    menuList.style.display = "block";
+  } else {
+    menuList.style.maxHeight = "0%";
+    console.log("not", menuList.style.maxHeight);
+    menuList.style.display = "none";
+  }
+}
