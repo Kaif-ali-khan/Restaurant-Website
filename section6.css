@@ -39,7 +39,7 @@ form.example {
     display: flex;
     background-color: #fff;
     width: 40vw;
-    height: 10vh;
+    /* height: 10vh; */
     border-radius: 20px;
     outline: none;
 }
