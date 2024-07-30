@@ -76,10 +76,9 @@
     }
 
     .section1 .left .btn-twin {
-        /* padding-right: 0px !important;
-        width: 55% !important; */
-        width: 100%;
-        padding: 42px 6px
+        padding-right: 0px !important;
+        gap: 20px;
+        justify-content: start;
     }
 
     .btn-menu {
@@ -88,8 +87,9 @@
     }
 
     .btn {
-        padding: 30px 45px;
+        padding: 30px 30px;
         font-size: 30px !important;
+        margin-left: 15px;
     }
 
     .section1 .left .social-icons {

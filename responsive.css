@@ -57,6 +57,7 @@
     .circle {
         padding-bottom: 45%;
     }
+
     .section1 .left h1 {
         font-size: 10vw !important;
         padding: 10px 0px !important;
@@ -68,16 +69,19 @@
     }
 
     .section1 .left .btn-twin {
-        /* padding-right: 60px !important; */
-        /* gap: 20px; */
-        padding: 15px;
+        padding-right: 0px !important;
+        gap: 20px;
+        justify-content: start;
     }
 
-    /* .section1 .left .social-icons {
-        padding-right: 145px;
-        margin-left: 20px;
-    } */
-    .section1 .left .social-icons i{
+    .section1 .left .social-icons {
+        display: flex;
+        align-items: center;
+        justify-content: start !important;
+        padding-right: 0px !important;
+    }
+
+    .section1 .left .social-icons i {
         margin-left: 15px;
     }
 
