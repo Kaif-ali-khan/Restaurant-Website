@@ -1,3 +1,40 @@
+const boxdetails = [
+  {
+    id: 1,
+    img: "img/section2-boxes/dish-1 1.png",
+    pricetag: "$12",
+    foodname: "Lumpia with Suace",
+    details:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit Itaque, et.",
+  },
+  {
+    id: 2,
+    img: "img/section2-boxes/dish-3 1.png",
+    pricetag: "$15",
+    foodname: "Fish and Veggie",
+    details:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit Itaque, et.",
+  },
+  {
+    id: 3,
+    img: "img/section2-boxes/dish-4.png",
+    pricetag: "$20",
+    foodname: "Tofu Chili",
+    details:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit Itaque, et.",
+  },
+  {
+    id: 4,
+    img: "img/section2-boxes/dish-5.png",
+    pricetag: "$50",
+    foodname: "Egg and Cocumber",
+    details:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit Itaque, et.",
+  },
+];
+
+
+
 function loadHTML(id, url) {
   return fetch(url)
     .then((response) => response.text())
@@ -53,7 +90,27 @@ Promise.all([
           `<span style="transform:rotate(${i * 25}deg)">${char}</span>`
       )
       .join("");
+
+      const menuarr = boxdetails.map((data) => {
+        return `<div class="box">
+          <div class="box-top">
+            <img src="${data.img}" alt="" />
+            <div class="price-tag"><p>${data.pricetag}</p></div>
+          </div>
+          <div class="box-bottom">
+            <h3>${data.foodname}</h3>
+            <p>
+              ${data.details}
+            </p>
+          </div>
+        </div>`;
+      });
+      const targmenu = document.querySelector(".food-info-boxes");
+      
+      // console.log(targmenu);
+      targmenu.innerHTML = menuarr.join("")
   });
+  
 });
 
 // let menulist = document.getElementById("menuList")
@@ -69,19 +126,45 @@ Promise.all([
 //   }
 // }
 
-let menulist = document.getElementById("menuList");
+// let menulist = document.getElementById("menuList");
 
-menuList.style.maxHeight = "0%";
-menuList.style.display = "none";
+// menuList.style.maxHeight = "0%";
+// menuList.style.display = "none";
 
-function toggleMenu() {
-  if (menuList.style.maxHeight == "0%") {
-    console.log("hey", menuList.style);
-    menuList.style.maxHeight = "100%";
-    menuList.style.display = "block";
-  } else {
-    menuList.style.maxHeight = "0%";
-    console.log("not", menuList.style.maxHeight);
-    menuList.style.display = "none";
-  }
-}
+// function toggleMenu() {
+//   if (menuList.style.maxHeight == "0%") {
+//     console.log("hey", menuList.style);
+//     menuList.style.maxHeight = "100%";
+//     menuList.style.display = "block";
+//   } else {
+//     menuList.style.maxHeight = "0%";
+//     console.log("not", menuList.style.maxHeight);
+//     menuList.style.display = "none";
+//   }
+// }
+
+// const arr = [
+//   {
+//     id: 1,
+//     title: "Restaurant Dish 1",
+//   },
+
+//   {
+//     id: 2,
+//     title: "Restaurant dish 2",
+//   },
+// ];
+
+// arr.map((data, index) => {
+//   return (
+//     <div key={index}>
+//       <p>{data.title}</p>
+//     </div>
+//   );
+// });
+
+const card = document.querySelector(".box");
+
+
+
+

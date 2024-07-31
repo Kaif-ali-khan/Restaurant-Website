@@ -135,6 +135,7 @@
     .sec2-top h2 {
         font-size: 75px !important;
         padding-top: 94px;
+        text-align: center !important;
     }
 
     .sec2-top p {
