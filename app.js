@@ -1,3 +1,8 @@
+const card = document.querySelector(".box");
+const paraBox = document.querySelector(".check-para-in");
+
+
+
 const boxdetails = [
   {
     id: 1,
@@ -33,11 +38,45 @@ const boxdetails = [
   },
 ];
 
-
+const paraList = [
+  {
+    id: 1,
+    icon: "",
+    para: "Lorem ipsum dolor sit amet consectetur.",
+  },
+  {
+    id: 2,
+    icon: "",
+    para: "Lorem ipsum dolor sit amet consectetur.",
+  },
+  {
+    id: 3,
+    icon: "",
+    para: "Lorem ipsum dolor sit amet consectetur.",
+  },
+  {
+    id: 4,
+    icon: "",
+    para: "Lorem ipsum dolor sit amet consectetur.",
+  },
+  {
+    id: 5,
+    icon: "",
+    para: "Lorem ipsum dolor sit amet consectetur.",
+  },
+  {
+    id: 6,
+    icon: "",
+    para: "Lorem ipsum dolor sit amet consectetur.",
+  },
+];
 
 function loadHTML(id, url) {
   return fetch(url)
-    .then((response) => response.text())
+    .then((response) => {
+      return response.text();
+    })
+
     .then((data) => {
       document.getElementById(id).innerHTML = data;
     })
@@ -91,8 +130,8 @@ Promise.all([
       )
       .join("");
 
-      const menuarr = boxdetails.map((data) => {
-        return `<div class="box">
+    const menuarr = boxdetails.map(
+      (data) => `<div class="box">
           <div class="box-top">
             <img src="${data.img}" alt="" />
             <div class="price-tag"><p>${data.pricetag}</p></div>
@@ -103,67 +142,46 @@ Promise.all([
               ${data.details}
             </p>
           </div>
-        </div>`;
-      });
-      const targmenu = document.querySelector(".food-info-boxes");
-      
-      // console.log(targmenu);
-      targmenu.innerHTML = menuarr.join("")
+        </div>`
+    );
+    const targmenu = document.querySelector(".food-info-boxes");
+
+    // console.log(targmenu);
+    targmenu.innerHTML = menuarr.join("");
+
+    const newpara = paraList.map(
+      (data) => `<div class="check-para-in">
+            <i class="ri-check-line">${data.icon}</i>
+            <p>${data.para}</p>
+          </div>`
+    );
+
+    const targpara = document.querySelectorAll(".check-para-column");
+    targpara.innerHTML = newpara.join("");
+
+    const taragpara1 = targpara[0];
+    const taragpara2 = targpara[1];
+
+    taragpara1.innerHTML = newpara.slice(0,3).join("");
+    taragpara2.innerHTML = newpara.slice(3, 6).join("");
+    // console.log(targpara);
+    
   });
-  
 });
 
-// let menulist = document.getElementById("menuList")
 
-//       menuList.style.maxHeight = "0%";
+function toggleMenu() {
+  if (menuList.style.maxHeight == "0%") {
+    menuList.style.maxHeight = "100%";
+    menuList.style.display = "block";
+  } else {
+    menuList.style.maxHeight = "0%";
+    menuList.style.display = "none";
+  }
+}
 
-// function toggleMenu() {
-//   let menuList = document.getElementById("menuList");
-//   if (menuList.style.maxHeight == "0%") {
-//     menuList.style.maxHeight = "100%";
-//   } else {
-//     menuList.style.maxHeight = "0%";
-//   }
-// }
 
-// let menulist = document.getElementById("menuList");
 
-// menuList.style.maxHeight = "0%";
-// menuList.style.display = "none";
-
-// function toggleMenu() {
-//   if (menuList.style.maxHeight == "0%") {
-//     console.log("hey", menuList.style);
-//     menuList.style.maxHeight = "100%";
-//     menuList.style.display = "block";
-//   } else {
-//     menuList.style.maxHeight = "0%";
-//     console.log("not", menuList.style.maxHeight);
-//     menuList.style.display = "none";
-//   }
-// }
-
-// const arr = [
-//   {
-//     id: 1,
-//     title: "Restaurant Dish 1",
-//   },
-
-//   {
-//     id: 2,
-//     title: "Restaurant dish 2",
-//   },
-// ];
-
-// arr.map((data, index) => {
-//   return (
-//     <div key={index}>
-//       <p>{data.title}</p>
-//     </div>
-//   );
-// });
-
-const card = document.querySelector(".box");
 
 
 
